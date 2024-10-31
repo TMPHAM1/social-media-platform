@@ -1,5 +1,5 @@
 <template>
-  <NuxtLink to="#" class="flex items-center p-3 w-min text-black hover:bg-gray-200 dark:hover:bg-dim-200">
+  <NuxtLink to="#" class="flex items-center p-3 w-min text-black dark:text-white hover:bg-gray-200 dark:hover:bg-dim-200">
     <div class="w-6 h-6 text-dark" :class="defaultTransition">
       <slot
       name="icon"></slot>
@@ -13,7 +13,7 @@
 </template>
 
 <script lang="ts" setup>
-  const {defaultTransiiton} = useTailwindConfig();
+  const {defaultTransition} = useTailwindConfig();
   const props = defineProps({
     active: {
       type: Boolean,
